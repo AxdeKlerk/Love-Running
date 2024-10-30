@@ -44,6 +44,44 @@ header a {
   color: inherit;
 }
 
+/*Navbar styles with drop-down toggle*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: left;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/*Nav toggle*/
+#nav-toggle:checked~nav {
+display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+#menu {
+    list-style-type: none;
+    letter-spacing: 4px;
+    font-size: 110%;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
 /*Main Content*/
 main {
     /*Make main element take up any surplus space to push footer down*/
@@ -101,42 +139,22 @@ main {
     margin: 5px 0;
 }
 
-#menu {
-    list-style-type: none;
-    letter-spacing: 4px;
-    font-size: 110%;
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) no-repeat top center/cover;
+    position: relative;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    /* Makes square image round */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
-#menu > li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-/*Navbar styles with drop-down toggle*/
-nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    text-align: left;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
-}
-
-/*Nav toggle*/
-#nav-toggle:checked~nav {
-display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-.nav-toggle-label {
-    font-size: 2rem;
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Footer*/
