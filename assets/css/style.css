@@ -176,10 +176,12 @@ main {
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
+
     /* This will not wrap on screen less that 400px wide.
     Each div will expand to fill the available space on its row. */
     flex-basis: 200px;
     flex-grow: 1;
+
     /* Create a grid of meet up times over background image */
     border: 2px solid white;
 }
@@ -199,6 +201,19 @@ main {
 #photos {
     line-height: 0;
 }
+
+/* Sign up page */
+
+#signup {
+background: url("../images/signup-image.webp") no-repeat center/cover;
+}
+
+#signup img {
+    width: 100%;
+    line-height: 1em;
+}
+
+
 /* Footer */
 #social-networks {
     text-align: center;
